@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>MakeUp Product Tagging</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+	<h1>
+		<CENTER>MakeUp's Info</CENTER>
+	</h1>
+	<div align="center">
+		<form action="{{ url_for('predict')}}" method="post">
+			<p>Enter Makeup Name Here</p>
+			<textarea name="makeup-name" placeholder="Enter makeup name"
+				required="required"></textarea><br>
+			<p>Enter Makeup Discription Here</p>
+			<textarea name="makeup-discription" placeholder="Enter makeup discription"
+				required="required"></textarea><br><br>
+			<button type="submit" class="btn btn-primary btn-block btn-large">Product Type Predict</button>
+		</form>
+
+		<br>
+		<br>
+		{{ prediction_text }}
+
+	</div>
+</body>
+
+</html>

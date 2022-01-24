@@ -1,0 +1,18 @@
+Testing steps:
+
+python3 -m venv venv
+*********************************
+source venv/bin/activate
+*********************************
+pip3 install -r requirements.txt
+
+ssh -i ~/.ssh/deploy.pem ubuntu@ec2-3-16-164-220.us-east-2.compute.amazonaws.com
+文件夹
+scp -i ~/.ssh/deploy.pem -r /mnt/c/Users/DELL/Desktop/NLP/ptype-prediction ubuntu@ec2-3-16-164-220.us-east-2.compute.amazonaws.com:~
+
+EC2 url
+http://ec2-3-16-164-220.us-east-2.compute.amazonaws.com:8080/
+
+Input
+
+This foolproof eyeliner is infused with high-impact pigments that deliver smudge-proof, saturated, matte color. The weightless, inky pencil features thermo-sensory technology that allows this formula to transform from a solid to a liquid upon contact with skin, creating a flexible, water-resistant film that lasts up to 24 hours. The micro-thin lead on this next-generation pencil can be dotted between lashes or glided across eyes with remarkable precision and no skipping. Available in five shades inspired by sumi ink sticks used in traditional Japanese calligraphy. Dermatologist and ophthalmologist-tested.
