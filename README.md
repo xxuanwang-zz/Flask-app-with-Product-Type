@@ -39,7 +39,7 @@ These two file are serialized from the NLP process within [this repo](https://gi
     - It allows users enter the name and description of a makeup product, and show the prediction.  
 
 <p align="center">
-<img src="images/flask_1.png" width="300" height="300">
+<img src="images/flask_1.png" width="300" height="400">
 </p>
 
 **3. Flask Back-End API**
