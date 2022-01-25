@@ -1,25 +1,29 @@
+(For running the app on a local machine, a venv is recommanded)
 Set up venv:
 python3 -m venv venv
 source venv/bin/activate
-pip3 install -r requirements.txt
 ************************************************************************************************************
 Transfer folders
 ssh -i ~/.ssh/<your-pem-file> user@server
 scp -i ~/.ssh/<your-pem-file> -r <path-to-the-folder> user@server:~
 ************************************************************************************************************
-Flask App URL
-http://<your DNS>::<your port no>
-e.g.
-http://ec2-3-16-164-220.us-east-2.compute.amazonaws.com:8080/
-************************************************************************************************************
 How to execute:
 1. Connect to your EC2 instance from your local machine
 2. Use 'pip' to install required packages
 - sudo apt-get update && sudo apt-get install python3-pip
-3. python3 pt-app.py
+- pip3 install -r requirements.txt
+3.  Switch to the folder where the app.py is stored and run app.py
+- python3 pt-app.py
+4. Flask App URL
+http://<your DNS>::<your port no>
+e.g.
+http://ec2-3-16-164-220.us-east-2.compute.amazonaws.com:8080/
 ************************************************************************************************************
 Test Input
-Name: Double Wear Stay-in-Place Foundation
+Name: 
+
+Double Wear Stay-in-Place Foundation
+
 Descriptoin:
 
 Wear confidence. Double Wear Makeup is the fresh matte foundation that looks flawless whatever comes your way. 24-hour wear. Oil-free. Controls oil all day. Sweat-, heat- and humidity-resistant. Lifeproof, waterproof foundation. 24-hour color true.
